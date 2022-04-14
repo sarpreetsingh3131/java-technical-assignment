@@ -2,15 +2,14 @@ package kata.supermarket;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 public class Basket {
     private final List<Item> items;
 
-    public Basket() {
-        this.items = new ArrayList<>();
+    public Basket(final List<Item> items) {
+        this.items = items;
     }
 
     public void add(final Item item) {
